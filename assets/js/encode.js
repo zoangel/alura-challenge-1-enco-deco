@@ -75,19 +75,27 @@ function decodifica(){
     return;
 }
 
+
 function limpiar_pantalla() {
     console.log("* limpia pantalla *")
     document.getElementById('text-1').style.display = "block";
     document.getElementById('text-2').style.display = "block";
     document.getElementById('contenido-text').value = "";
     document.getElementById('texto-salida').style.display = "none";
+    
+    document.getElementById("div-salida").style.backgroundImage = "url('./assets/img/encode.png')";
+    document.getElementById("div-salida").style.backgroundRepeat = 'no-repeat';
+    document.getElementById("div-salida").style.backgroundPosition = 'top center';
+    document.getElementById("div-salida").style.backgroundSize = '250px';
+
     return;
 }
 
+
 function copiar_texto() {
     console.log('* copiar texto *');
-    let textoCopiado = document.getElementById("texto-salida").value;
-    navigator.clipboard.writeText(textoCopiado);
+    let textoParrafo = document.getElementById("texto-salida");
+    navigator.clipboard.writeText(textoParrafo.textContent);
 
     return;
 }

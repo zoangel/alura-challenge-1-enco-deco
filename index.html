@@ -19,12 +19,14 @@
             <textarea id="contenido-text"></textarea>
             <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAb9JREFUSEvFlttRAzEMRZVOoBKgE6gEqASoJFAJdAJzMpbnRmv5sUMm/tlk1tbR467kg11pHa7EtT3gGzO7NzOeP8Vxnp8rQcyCgTya2XPHuMNfxaF0+wg8A4zG3YGnXgZ6YKDHklK3QTq/Slr5rWm/KyXwvTjwkEWfgTH4LR5jhAhGdYzOpvAMDBQjLGr2siCcWB7gt/F8C/xWhDSComwWhl3dah9nXYzvJWP1fQRjjLq6wY2n5Z3uo46tEhA5QbB3U6oI1mgzg7BnwOxTreAcNk8rgr22m9SEGs2COUYGPeqaQQWrsZGgVsBa65pFBdOZSDWLT4eos7UC1r3VbgYmJS2luiMrYK1zzaSCNSX/CcbZ35jJrMY9Ra+omr3NEu4Vl3cnDKOFXlmamVRw+s0lCht1Lj+mvaHy4nes31xvKMyKS/ed9YYI1qibzX2hZWrz4PeZbkZDIutgOOjTKxuVS0PC+6tfAIj6Y3EsYkOh02MxNnf+770IbFKcDQkVcOs24bPXrz/uJCJqXX1SgV7isoczoyEzfa8mem4TdKFsuR5GDeV0fhRxhLiaXdF+qb/Yhb4T6L5XqxHvozRO/QFzrIofQa+VEgAAAABJRU5ErkJggg=="/>
             Ingresa solo letras</p>
-            <button onclick="codifica()" type="submit">Codificar
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M20 12c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5S7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-8zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9V7z"></path></svg>            </button>
-            <button onclick="decodifica()" type="submit">Decodificar
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M17 8V7c0-2.757-2.243-5-5-5S7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-8c0-1.103-.897-2-2-2H9V7c0-1.654 1.346-3 3-3s3 1.346 3 3v1h2z"></path></svg>            </button>
-            <button onclick="limpiar_pantalla()" type="submit">Limpiar
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M12.48 3 7.73 7.75 3 12.59a2 2 0 0 0 0 2.82l4.3 4.3A1 1 0 0 0 8 20h12v-2h-7l7.22-7.22a2 2 0 0 0 0-2.83L15.31 3a2 2 0 0 0-2.83 0zM8.41 18l-4-4 4.75-4.84.74-.75 4.95 4.95-4.56 4.56-.07.08z"></path></svg></button>
+            <div class="botones-div-entrada">
+                <button onclick="codifica()" type="submit">Codificar
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M20 12c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5S7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-8zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9V7z"></path></svg>            </button>
+                <button onclick="decodifica()" type="submit">Decodificar
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M17 8V7c0-2.757-2.243-5-5-5S7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-8c0-1.103-.897-2-2-2H9V7c0-1.654 1.346-3 3-3s3 1.346 3 3v1h2z"></path></svg>            </button>
+                <button onclick="limpiar_pantalla()" type="submit">Limpiar
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M12.48 3 7.73 7.75 3 12.59a2 2 0 0 0 0 2.82l4.3 4.3A1 1 0 0 0 8 20h12v-2h-7l7.22-7.22a2 2 0 0 0 0-2.83L15.31 3a2 2 0 0 0-2.83 0zM8.41 18l-4-4 4.75-4.84.74-.75 4.95 4.95-4.56 4.56-.07.08z"></path></svg></button>
+            </div>
         </div>
         <div class="div-salida" id="div-salida">
             <p id="texto-salida"></p>

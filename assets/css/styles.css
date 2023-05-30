@@ -57,6 +57,7 @@ button {
 }
 
 .div-salida {
+    position:relative;
     align-items:center;
     border: 1px black solid;
     border-color: black;
@@ -72,13 +73,31 @@ button {
     flex-direction:column;
     justify-content:flex-end;
     margin-bottom:50px;
-    padding:30px;
+    padding:50px;
     width: 40%;
 }
+
+.botones-div-entrada{
+    display:flex;
+    justify-content:space-between;
+    position:relative;
+}
+
+.botones-div-entrada bottom {
+    position: absolute;
+    bottom:0px;
+}
+
 
 #texto-salida {
     color:blue;
     font-size:1.5em;
+    margin-bottom:100px;
+    position: absolute;
+    top:0px;
+    max-width:100%;
+    padding:10px;
+    padding-left:20px;
 }
 
 button:hover{
