@@ -65,6 +65,8 @@ function decodifica(){
         return;
     }
 
+
+    textoCodificado = textoCodificado.toUpperCase();
     let textoDecoStr = textoCodificado.replace(/AI|ENTER|IMES|OBER|UFAT/gi, function(match){
         return mapaReplace[match];
     });
